@@ -257,9 +257,6 @@ class MyAppState extends State<MyApp> {
                               width: 60,
                             ),
                             Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.pink),
-                                  borderRadius: BorderRadius.circular(15)),
                               child: const Icon(
                                 Icons.circle,
                                 color: Color.fromARGB(255, 61, 59, 59),
@@ -290,12 +287,12 @@ class MyAppState extends State<MyApp> {
                               style: TextStyle(
                                   fontWeight: FontWeight.w500, fontSize: 17),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 30,
                             ),
                             ElevatedButton(
                               onPressed: () {},
-                              child: Row(
+                              child: const Row(
                                 children: [
                                   Text(
                                     'Add To Cart ',
@@ -315,7 +312,7 @@ class MyAppState extends State<MyApp> {
                                   backgroundColor: Colors.pink,
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15)),
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                       horizontal: 40, vertical: 10)),
                             ),
                           ],
@@ -354,6 +351,10 @@ class MyAppState extends State<MyApp> {
                 ),
               ),
             ],
+          ),
+        ));
+  }
+}
           ),
         ));
   }
